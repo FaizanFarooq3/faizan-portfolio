@@ -1,5 +1,5 @@
 
-Personal portfolio of **Md Omer Farooq** — Cloud & DevOps Engineer.
+Personal portfolio of **Md Faizan Farooq** — Data Scientist & ML Engineer.
 
 ## Stack
 

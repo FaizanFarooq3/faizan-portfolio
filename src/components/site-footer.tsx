@@ -1,13 +1,12 @@
-import { Github, Instagram, Linkedin, FileText } from "lucide-react";
+import { Github, Linkedin, FileText } from "lucide-react";
 import { useState } from "react";
 import { Reveal } from "./reveal";
 
-const EMAIL = "farooqomarfarooqomar@gmail.com";
+const EMAIL = "faizanfarooq.mail@gmail.com";
 
 const socials = [
-  { label: "GitHub", href: "https://github.com/MdOmerFarooq", Icon: Github },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/mdomerfarooq/", Icon: Linkedin },
-  { label: "Instagram", href: "https://instagram.com/o_merx16", Icon: Instagram },
+  { label: "GitHub", href: "https://github.com/FaizanFarooq3", Icon: Github },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/faizanfarooq/", Icon: Linkedin },
   { label: "Resume (PDF)", href: "/resume.pdf", Icon: FileText },
 ];
 
@@ -27,7 +26,7 @@ export function SiteFooter() {
   return (
     <Reveal as="footer" id="footer" className="scroll-mt-24 border-t border-border">
       <div className="mx-auto max-w-6xl px-6 py-[110px]">
-        <h2 className="font-serif text-4xl text-foreground sm:text-6xl">Md Omer Farooq</h2>
+        <h2 className="font-serif text-4xl text-foreground sm:text-6xl">Md Faizan Farooq</h2>
 
         <button
           type="button"
@@ -56,7 +55,7 @@ export function SiteFooter() {
         </div>
 
         <p className="mt-16 font-mono text-xs text-muted-foreground">
-          © 2026 — built between 11pm and 3am, like all good infrastructure
+          © 2026 — built between 11pm and 3am, like all good ML pipelines
         </p>
       </div>
     </Reveal>

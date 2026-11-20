@@ -4,14 +4,14 @@ import { Reveal } from "@/components/reveal";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 import { ProjectsList } from "@/components/projects-list";
-import { Certifications } from "@/components/certifications";
+// import { Certifications } from "@/components/certifications";
 import { FramePlayer } from "@/components/frame-player";
 import { skills } from "@/data/portfolio";
 import { WorkHistory } from "@/components/work-history";
 
-const title = "Md Omer Farooq — Cloud & DevOps Engineer";
+const title = "Md Faizan Farooq — Data Scientist & ML Engineer";
 const description =
-  "Cloud and DevOps engineer building infrastructure that scales. Terraform, AWS, Python, Kubernetes, and automation that keeps you asleep at 3am.";
+  "Data Scientist and ML Engineer building production ML pipelines, customer risk & churn models, and scalable ETL architectures with Python, SQL, XGBoost, PyTorch, FastAPI, and Docker.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -27,11 +27,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   useEffect(() => {
-    // On a fresh page load, always start at the hero — ignore any restored
-    // scroll position or leftover URL hash (e.g. "#experience").
     if (typeof window === "undefined") return;
-    // A hash in the URL is an explicit request for that section — let the
-    // browser handle it natively.
     if (window.location.hash) return;
     if (window.scrollY > 0) {
       window.scrollTo({ top: 0, behavior: "auto" });
@@ -48,16 +44,16 @@ function Index() {
           <div className="grid w-full grid-cols-1 items-center gap-14 md:grid-cols-[55%_45%]">
             <div>
               <h1 className="font-serif text-4xl leading-tight text-foreground sm:text-5xl">
-                Hi, I'm Omer Farooq.
+                Hi, I'm Faizan Farooq.
               </h1>
               <p className="mt-4 font-serif text-5xl leading-[1.05] font-bold text-foreground sm:text-6xl">
-                I build and automate infrastructure that teams can rely on.
+                I build production ML systems and scalable data pipelines.
               </p>
               <p className="mt-8 max-w-xl text-sm leading-relaxed text-muted-foreground">
-                I'm a Cloud &amp; DevOps Engineer with nearly 3 years of experience working across
-                infrastructure, automation, and systems engineering. I build cloud environments,
-                automate deployments and operations, and spend a lot of time making systems easier
-                to run, troubleshoot, and scale.
+                I'm a Data Scientist &amp; ML Engineer focused on turning raw, messy data into
+                reliable predictive systems. From automated ETL architectures and feature
+                engineering to tuning models with XGBoost and PyTorch and serving them via
+                FastAPI and Docker, I build end-to-end pipelines designed for production.
               </p>
             </div>
             <div className="flex justify-center md:translate-x-[-48px] md:justify-end">
@@ -114,12 +110,13 @@ function Index() {
           <ProjectsList />
         </Reveal>
 
-        {/* CERTIFICATIONS */}
+        {/* CERTIFICATIONS — Uncomment when ready to add awards/certs
         <Reveal as="section" id="certifications" className="scroll-mt-24 py-24">
           <p className="eyebrow">certifications</p>
           <h2 className="mt-4 font-serif text-4xl text-foreground sm:text-5xl">Credentials</h2>
           <Certifications />
         </Reveal>
+        */}
       </main>
 
       <SiteFooter />
